@@ -7,7 +7,7 @@ import io.nodaiity.ohbuoy.core.NodeState
 class ContinuityScanner {
 
     fun runStartupTrace(): List<NodePacket> {
-        val traceId = "startup"
+        val traceId = "startup_4812"
         val timestamp = System.currentTimeMillis()
 
         return listOf(
@@ -44,34 +44,5 @@ class ContinuityScanner {
                 upstreamNode = NodeId.GOVERNANCE_NODE
             )
         )
-    }
-
-    fun renderStartupTrace(): String {
-        return runStartupTrace()
-            .joinToString(separator = "\n") { packet ->
-                "${packet.nodeId.displayName()} ${packet.state.symbol()}"
-            }
-    }
-
-    fun renderDownstreamWarning(): String? {
-        return runStartupTrace()
-            .firstNotNullOfOrNull { packet -> packet.downstreamEffect }
-    }
-
-    private fun NodeId.displayName(): String {
-        return when (this) {
-            NodeId.AUTH_NODE -> "AUTH"
-            NodeId.TENANT_NODE -> "TENANT"
-            NodeId.GOVERNANCE_NODE -> "GOVERNANCE"
-            NodeId.NAVIGATION_NODE -> "NAVIGATION"
-        }
-    }
-
-    private fun NodeState.symbol(): String {
-        return when (this) {
-            NodeState.OK -> "✓"
-            NodeState.WARN -> "⚠"
-            NodeState.STOP -> "⛔"
-        }
     }
 }
