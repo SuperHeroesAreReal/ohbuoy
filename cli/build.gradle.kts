@@ -16,3 +16,13 @@ application {
     mainClass = "io.nodaiity.ohbuoy.cli.OhBuoyCliKt"
     applicationDefaultJvmArgs = listOf("-Dfile.encoding=UTF-8")
 }
+
+distributions {
+    main {
+        contents {
+            from(rootProject.file("README.md")) {
+                into("")
+            }
+        }
+    }
+}
