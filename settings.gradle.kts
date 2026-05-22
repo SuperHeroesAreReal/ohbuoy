@@ -23,4 +23,6 @@ dependencyResolutionManagement {
 }
 
 rootProject.name = "ohbuoy"
+include(":core")
+include(":cli")
 include(":app")
