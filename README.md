@@ -1,5 +1,7 @@
 # OhBuoy V0
 
+![OhBuoy - stack trace ocean](assets/ohbuoy-stack-trace-ocean.png)
+
 OhBuoy is a lightweight operational orientation instrument.
 
 It is not observability tooling, telemetry, distributed tracing, dashboards, AI orchestration, network surveillance, or infrastructure crawling.
@@ -22,6 +24,8 @@ minimal memory is sacred
 the scanner must float above terrain, not become the terrain
 ```
 
+---
+
 ## Use
 
 Build the local CLI package:
@@ -42,7 +46,9 @@ Equivalent scan form:
 .\cli\build\install\ohbuoy\bin\ohbuoy.bat scan startup
 ```
 
-Expected V0 terrain:
+---
+
+## Expected V0 Terrain
 
 ```text
 TRACE startup_4812
@@ -65,6 +71,8 @@ governance
 navigation
 ```
 
+---
+
 ## Boundaries
 
 OhBuoy observes declared terrain only.
@@ -72,6 +80,8 @@ OhBuoy observes declared terrain only.
 It must never become an autonomous topology crawler. It does not chase unknown links, discover infrastructure, retain operational data, ingest telemetry, or build dashboards.
 
 The scanner emits bounded continuity packets, renders operational orientation, and releases the data.
+
+---
 
 ## RECCE
 
@@ -84,13 +94,17 @@ report
 disappear
 ```
 
-Scouts do not start building towers because the view is nice. RECCE marks continuity fracture zones without fixing, rewriting, or occupying terrain.
+Scouts do not start building towers because the view is nice.
+
+RECCE marks continuity fracture zones without fixing, rewriting, or occupying terrain.
 
 Run RECCE doctrine tests:
 
 ```powershell
 .\gradlew.bat :core:test
 ```
+
+---
 
 ## Current Shape
 
@@ -102,5 +116,16 @@ larger package = remembers/signposts terrain
 
 Markers, memory signposts, and durable topology annotations belong in a larger cognition layer, not in the scanner.
 
-## Keywords:
+---
+
+## Keywords
+
 continuity tracing, operational topology, system propagation, runtime continuity, auth drift, topology mapping, trace analysis, operational GIS, fracture detection, startup sequencing, navigation continuity, systems topography
+
+---
+
+![NodAIity Logo](assets/NodAIity-logo.png)
+
+```text
+Good luck sailor.
+```
