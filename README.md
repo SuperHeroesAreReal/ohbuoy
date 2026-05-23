@@ -1,14 +1,15 @@
 # OhBuoy V0
 
-OhBuoy is a virtual continuity scanner for operational terrain.
+OhBuoy is a lightweight operational orientation instrument.
 
 It is not observability tooling, telemetry, distributed tracing, dashboards, AI orchestration, network surveillance, or infrastructure crawling.
 
 Core loop:
 
 ```text
-receive
-interpret
+scan
+packet
+render
 release
 ```
 
@@ -100,3 +101,6 @@ larger package = remembers/signposts terrain
 ```
 
 Markers, memory signposts, and durable topology annotations belong in a larger cognition layer, not in the scanner.
+
+## Keywords:
+continuity tracing, operational topology, system propagation, runtime continuity, auth drift, topology mapping, trace analysis, operational GIS, fracture detection, startup sequencing, navigation continuity, systems topography
