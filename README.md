@@ -73,6 +73,49 @@ navigation
 
 ---
 
+## V2 Compass
+
+Compass compares declared propagation routes.
+
+It does not inspect projects, crawl repositories, chase runtime links, or decide terrain vocabulary. The route must be declared first.
+
+Run the Paula memory pipeline report:
+
+```powershell
+.\cli\build\install\ohbuoy\bin\ohbuoy.bat compass paula_memory_pipeline
+```
+
+Expected shape:
+
+```text
+COMPASS REPORT paula_memory_pipeline
+
+EXPECTED:
+USER_INPUT
+→ STANCE_GATE
+→ TERRAIN_GATE
+→ BLOCKERS/SIGNPOSTS
+→ FILTERED_RECENT_MEMORY
+→ BOUNDED_RETRIEVAL
+→ TOPOGRAPHY_PACKET
+→ MODEL_PROMPT
+→ MODEL_RESPONSE
+→ SQLITE_MEMORY_WRITE
+
+OBSERVED:
+USER_INPUT
+→ TOPOGRAPHY_PACKET
+→ RECENT_SQLITE_MEMORY
+→ MODEL_PROMPT
+→ MODEL_RESPONSE
+→ SQLITE_MEMORY_WRITE
+
+HOWLER:
+RECENT_SQLITE_MEMORY bypasses STANCE_GATE and TERRAIN_GATE.
+```
+
+---
+
 ## Boundaries
 
 OhBuoy observes declared terrain only.
