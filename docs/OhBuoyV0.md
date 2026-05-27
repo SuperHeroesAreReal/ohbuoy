@@ -152,11 +152,16 @@ Current separation:
 RECCE = enters terrain, observes, reports
 Plotter = maps local node vocabulary and corridors
 OhBuoy = scans declared continuity paths
-EEG = observes contextual posture before action
+AIluminode = wieldable cognitive orientation instrument
+EEG = AIluminode scan mode for route polarity
 nai = larger cognition layer
 ```
 
-EEG is an external orientation instrument for prompts/tasks. Compass guides EEG when a declared propagation corridor is known, then EEG emits active terrain, stance, route polarity, drift risks, and the next safe action. Route polarity can mark routes as `OPEN`, `PROTECT`, `BLOCK`, `DEFER`, or `AUDIT`. It does not crawl, retain prompts, retrieve memory, ingest source material, or change code.
+AIluminode is an external orientation instrument for prompts/tasks. Compass guides AIluminode EEG when a declared propagation corridor is known, then EEG emits active terrain, stance, route polarity, drift risks, and the next safe action. Route polarity can mark routes as `OPEN`, `PROTECT`, `BLOCK`, `DEFER`, or `AUDIT`.
+
+Compass determines corridor truth. AIluminode determines cognitive and retrieval posture.
+
+AIluminode does not crawl, retain prompts, retrieve memory, ingest source material, or change code.
 
 Do not add marker runtime, persistence, dashboards, autonomous discovery, or memory systems to OhBuoy V0.
 

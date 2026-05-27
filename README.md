@@ -6,6 +6,8 @@ OhBuoy is a lightweight operational orientation instrument.
 
 It is not observability tooling, telemetry, distributed tracing, dashboards, AI orchestration, network surveillance, or infrastructure crawling.
 
+Audits tell you what exists. OhBuoy tells you what happens along declared terrain.
+
 Core loop:
 
 ```text
@@ -46,10 +48,35 @@ Equivalent scan form:
 .\cli\build\install\ohbuoy\bin\ohbuoy.bat scan startup
 ```
 
-Run the EEG orientation instrument:
+Run the AIluminode EEG orientation instrument:
 
 ```powershell
 .\cli\build\install\ohbuoy\bin\ohbuoy.bat eeg "Refactor Paula EPUB source handling without touching memory save logic"
+```
+
+---
+
+## Orientation Stack
+
+```text
+OhBuoy      = continuity pulse
+Compass     = expected vs observed propagation
+RECCE       = bounded field verification
+Plotter     = terrain interpretation and recovery mapping
+AIluminode  = wieldable cognitive orientation instrument
+EEG         = AIluminode scan mode for contextual posture
+```
+
+Compass determines corridor truth.
+
+AIluminode determines cognitive and retrieval posture.
+
+EEG is the first AIluminode mode. It asks:
+
+```text
+What terrain am I allowed to enter?
+What terrain should I avoid?
+What terrain should I protect?
 ```
 
 ---
@@ -77,7 +104,7 @@ governance
 navigation
 ```
 
-EEG emits a compact contextual posture trace:
+AIluminode EEG emits a compact contextual posture trace:
 
 ```text
 EEG TRACE eeg_1234
@@ -183,7 +210,7 @@ It must never become an autonomous topology crawler. It does not chase unknown l
 
 The scanner emits bounded continuity packets, renders operational orientation, and releases the data.
 
-EEG follows the same boundary. It observes contextual posture before action; it does not read files, retain prompts, retrieve memory, or modify terrain.
+AIluminode follows the same boundary. EEG observes contextual posture before action; it does not read files, retain prompts, retrieve memory, or modify terrain.
 
 ---
 
@@ -214,8 +241,10 @@ Run RECCE doctrine tests:
 
 ```text
 ohbuoy = observes terrain
+Compass = compares expected and observed propagation
 RECCE = proves field discipline
-EEG = observes contextual posture before action
+AIluminode = wieldable cognitive orientation instrument
+EEG = AIluminode scan mode for route polarity
 larger package = remembers/signposts terrain
 ```
 
