@@ -6,6 +6,8 @@ V0 stays a simple debugging scanner. V1 remains reserved for a future V0 upgrade
 
 Compass is not autonomous analysis, repository crawling, telemetry ingestion, or durable marker storage.
 
+Compass determines corridor truth. When a declared corridor is known, Compass can guide AIluminode EEG by providing propagation drift, likely fix, and Codex target routes.
+
 ```text
 declared route
 observed route

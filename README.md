@@ -110,6 +110,7 @@ AIluminode EEG emits a compact contextual posture trace:
 EEG TRACE eeg_1234
 
 ACTIVE_TERRAIN:
+- paula_memory_pipeline
 - source_terrain
 - codebase
 
@@ -131,6 +132,7 @@ ROUTE_POLARITY:
 
 OPEN_ROUTES:
 - current_prompt
+- paula_memory_files
 - bounded_source_index
 - declared_code_surface
 
@@ -154,7 +156,7 @@ DRIFT_RISK:
 - source_terrain_mistaken_for_memory
 
 NEXT_SAFE_ACTION:
-Open bounded source snippets; do not save or ingest unless asked.
+Protect saved memory; inspect adjacent route logic without modifying it.
 ```
 
 ---
