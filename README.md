@@ -46,6 +46,12 @@ Equivalent scan form:
 .\cli\build\install\ohbuoy\bin\ohbuoy.bat scan startup
 ```
 
+Run the EEG orientation instrument:
+
+```powershell
+.\cli\build\install\ohbuoy\bin\ohbuoy.bat eeg "Refactor Paula EPUB source handling without touching memory save logic"
+```
+
 ---
 
 ## Expected V0 Terrain
@@ -69,6 +75,59 @@ startup
 login
 governance
 navigation
+```
+
+EEG emits a compact contextual posture trace:
+
+```text
+EEG TRACE eeg_1234
+
+ACTIVE_TERRAIN:
+- source_terrain
+- codebase
+
+STANCE:
+surgical_refactor
+
+COMPASS_GUIDANCE:
+- route=paula_memory_pipeline
+- howler=RECENT_SQLITE_MEMORY bypasses STANCE_GATE and TERRAIN_GATE.
+- likely_fix=Move recent memory retrieval behind topology filtering.
+
+ROUTE_POLARITY:
+- OPEN: current_prompt (declared task is the active entry point)
+- OPEN: bounded_source_index (source terrain is active; use bounded source access)
+- PROTECT: saved_memory (saved_memory is named under a protection/avoidance phrase)
+- AUDIT: compass:prompt_assembly (Compass target for observed propagation drift)
+- DEFER: vector_memory (vector_memory is not needed for this task)
+- BLOCK: autonomous_crawling (EEG V1 stays declared-terrain only)
+
+OPEN_ROUTES:
+- current_prompt
+- bounded_source_index
+- declared_code_surface
+
+PROTECT:
+- saved_memory
+
+AUDIT:
+- compass:prompt_assembly
+
+DEFER:
+- archive_logs
+- vector_memory
+- full_source_ingestion
+- dashboard
+
+BLOCK:
+- autonomous_crawling
+- telemetry_empire
+
+DRIFT_RISK:
+- source_terrain_mistaken_for_memory
+
+NEXT_SAFE_ACTION:
+Open bounded source snippets; do not save or ingest unless asked.
 ```
 
 ---
@@ -124,6 +183,8 @@ It must never become an autonomous topology crawler. It does not chase unknown l
 
 The scanner emits bounded continuity packets, renders operational orientation, and releases the data.
 
+EEG follows the same boundary. It observes contextual posture before action; it does not read files, retain prompts, retrieve memory, or modify terrain.
+
 ---
 
 ## RECCE
@@ -154,6 +215,7 @@ Run RECCE doctrine tests:
 ```text
 ohbuoy = observes terrain
 RECCE = proves field discipline
+EEG = observes contextual posture before action
 larger package = remembers/signposts terrain
 ```
 

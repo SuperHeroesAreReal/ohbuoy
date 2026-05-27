@@ -36,6 +36,7 @@ The scanner observes declared terrain. It does not crawl, discover, retain, orch
 - CLI entrypoint: `ohbuoy startup` and `ohbuoy scan startup`
 - RECCE doctrine tests
 - V0 CLI package distribution
+- EEG contextual posture scanner: `ohbuoy eeg <prompt>`
 
 Canonical sample:
 
@@ -151,8 +152,11 @@ Current separation:
 RECCE = enters terrain, observes, reports
 Plotter = maps local node vocabulary and corridors
 OhBuoy = scans declared continuity paths
+EEG = observes contextual posture before action
 nai = larger cognition layer
 ```
+
+EEG is an external orientation instrument for prompts/tasks. Compass guides EEG when a declared propagation corridor is known, then EEG emits active terrain, stance, route polarity, drift risks, and the next safe action. Route polarity can mark routes as `OPEN`, `PROTECT`, `BLOCK`, `DEFER`, or `AUDIT`. It does not crawl, retain prompts, retrieve memory, ingest source material, or change code.
 
 Do not add marker runtime, persistence, dashboards, autonomous discovery, or memory systems to OhBuoy V0.
 

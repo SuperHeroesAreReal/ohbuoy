@@ -3,6 +3,8 @@ package io.nodaiity.ohbuoy.cli
 import io.nodaiity.ohbuoy.core.compass.Compass
 import io.nodaiity.ohbuoy.core.compass.CompassMode
 import io.nodaiity.ohbuoy.core.compass.CompassRenderer
+import io.nodaiity.ohbuoy.core.eeg.EegRenderer
+import io.nodaiity.ohbuoy.core.eeg.EegScanner
 import io.nodaiity.ohbuoy.core.render.TraceRenderer
 import io.nodaiity.ohbuoy.core.scanner.ContinuityScanner
 import io.nodaiity.ohbuoy.core.scanner.ScannerMode
@@ -19,11 +21,23 @@ fun main(args: Array<String>) {
         return
     }
 
+    if (args.firstOrNull()?.equals("eeg", ignoreCase = true) == true) {
+        val prompt = args.drop(1).joinToString(" ").trim()
+        if (prompt.isBlank()) {
+            println("Usage: ohbuoy eeg <prompt>")
+            exitProcess(1)
+        }
+        val report = EegScanner().scan(prompt)
+        println(EegRenderer().render(report))
+        return
+    }
+
     val mode = args.toScannerMode()
 
     if (mode == null) {
         println("Usage: ohbuoy [scan] <startup|login|governance|navigation>")
         println("       ohbuoy compass <paula_memory_pipeline>")
+        println("       ohbuoy eeg <prompt>")
         exitProcess(1)
     }
 
