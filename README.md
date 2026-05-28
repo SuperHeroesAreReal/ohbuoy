@@ -254,9 +254,21 @@ Markers, memory signposts, and durable topology annotations belong in a larger c
 
 ---
 
+## Related Tool
+
+AIluminode is the standalone pre-retrieval cognitive-orientation companion to OhBuoy.
+
+- OhBuoy handles operational and topological orientation.
+- Compass compares expected and observed propagation.
+- AIluminode handles cognitive posture, route polarity, and retrieval discipline before action.
+
+Together they support orientation-first systems work without becoming telemetry, memory ownership, or autonomous orchestration.
+
+---
+
 ## Keywords
 
-continuity tracing, operational topology, system propagation, runtime continuity, auth drift, topology mapping, trace analysis, operational GIS, fracture detection, startup sequencing, navigation continuity, systems topography
+continuity tracing, operational topology, system propagation, runtime continuity, auth drift, topology mapping, trace analysis, operational GIS, fracture detection, startup sequencing, navigation continuity, systems topography, orientation-first systems, pre-retrieval orientation, cognitive posture, route polarity, bounded retrieval, contextual routing, drift reduction, retrieval discipline, terrain-aware systems
 
 ---
 
