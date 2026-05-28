@@ -79,6 +79,21 @@ What terrain should I avoid?
 What terrain should I protect?
 ```
 
+Route polarity is a corridor, not a blindfold.
+
+The scanner is operationally blinkered but architecturally peripheral-aware: it narrows action to declared terrain while still allowing side-door observations to be reported as evidence.
+
+Blocked terrain prevents implementation drift. It does not erase architectural awareness.
+
+Stable corridors need lighter orientation overhead. Uncertain, dark, or stale terrain should trigger a fresh Compass and EEG check before retrieval or action.
+
+```text
+if terrain feels stale
+→ ping orientation again
+→ refresh route polarity
+→ act only inside the updated corridor
+```
+
 ---
 
 ## Expected V0 Terrain
@@ -213,6 +228,10 @@ It must never become an autonomous topology crawler. It does not chase unknown l
 The scanner emits bounded continuity packets, renders operational orientation, and releases the data.
 
 AIluminode follows the same boundary. EEG observes contextual posture before action; it does not read files, retain prompts, retrieve memory, or modify terrain.
+
+Side-door observations may inform a report, but they do not grant permission to widen the implementation route.
+
+Dynamic re-orientation is preferred over stretching an old packet across changed terrain.
 
 ---
 
