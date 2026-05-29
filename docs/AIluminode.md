@@ -17,14 +17,27 @@ NodAIity tools
 ├── OhBuoy: continuity pulse
 ├── Compass: expected vs observed propagation
 ├── RECCE: bounded field verification
-├── Plotter: terrain interpretation and recovery mapping
+├── Plotter: position instrument
 └── AIluminode: cognitive orientation instrument
-    └── EEG: route polarity scan mode
+    └── EEG: internal route polarity scan mode
 ```
 
 Compass determines corridor truth.
 
 AIluminode determines cognitive and retrieval posture.
+
+Public identity:
+
+```text
+AIluminode = cognitive orientation instrument
+EEG        = internal scan mode
+```
+
+Instrument question:
+
+```text
+AIluminode -> How should I proceed?
+```
 
 ## EEG
 
@@ -55,6 +68,17 @@ PROTECT = preserve this route; do not alter it
 AUDIT   = inspect as evidence before acting
 DEFER   = leave dormant unless explicitly reopened
 BLOCK   = keep closed for this task
+```
+
+Unknown terrain remains outside the route:
+
+```text
+unknownTerrain
+-> route not registered
+-> position uncertain
+-> bearing unavailable
+-> stop propagation
+-> report state
 ```
 
 ## Boundary

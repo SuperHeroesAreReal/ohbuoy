@@ -8,6 +8,19 @@ Compass is not autonomous analysis, repository crawling, telemetry ingestion, or
 
 Compass determines corridor truth. When a declared corridor is known, Compass can guide AIluminode EEG by providing propagation drift, likely fix, and Codex target routes.
 
+Compass is the bearing instrument: it asks "Which way should I face?"
+
+Unknown terrain is a valid Compass result:
+
+```text
+unknownTerrain
+-> route not registered
+-> position uncertain
+-> bearing unavailable
+-> stop propagation
+-> report state
+```
+
 ```text
 declared route
 observed route

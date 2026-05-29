@@ -59,17 +59,35 @@ Run the AIluminode EEG orientation instrument:
 ## Orientation Stack
 
 ```text
-OhBuoy      = continuity pulse
-Compass     = expected vs observed propagation
-RECCE       = bounded field verification
-Plotter     = terrain interpretation and recovery mapping
-AIluminode  = wieldable cognitive orientation instrument
-EEG         = AIluminode scan mode for contextual posture
+OhBuoy      = continuity instrument
+Compass     = bearing instrument
+RECCE       = reconnaissance instrument
+Plotter     = position instrument
+AIluminode  = cognitive orientation instrument
+EEG         = internal AIluminode scan mode for contextual posture
 ```
 
 Compass determines corridor truth.
 
 AIluminode determines cognitive and retrieval posture.
+
+Instrument questions:
+
+```text
+OhBuoy     -> Is the route alive?
+RECCE      -> What is actually out there?
+Compass    -> Which way should I face?
+Plotter    -> Where am I?
+AIluminode -> How should I proceed?
+```
+
+Glass Stack doctrine:
+
+```text
+No pane owns the terrain.
+No pane owns another pane.
+Use the smallest set of panes needed before action.
+```
 
 EEG is the first AIluminode mode. It asks:
 
@@ -233,6 +251,17 @@ Side-door observations may inform a report, but they do not grant permission to 
 
 Dynamic re-orientation is preferred over stretching an old packet across changed terrain.
 
+Unknown terrain is a first-class state:
+
+```text
+unknownTerrain
+-> route not registered
+-> position uncertain
+-> bearing unavailable
+-> stop propagation
+-> report state
+```
+
 ---
 
 ## RECCE
@@ -264,8 +293,9 @@ Run RECCE doctrine tests:
 ohbuoy = observes terrain
 Compass = compares expected and observed propagation
 RECCE = proves field discipline
-AIluminode = wieldable cognitive orientation instrument
-EEG = AIluminode scan mode for route polarity
+Plotter = position instrument
+AIluminode = public cognitive orientation instrument
+EEG = internal AIluminode scan mode for route polarity
 larger package = remembers/signposts terrain
 ```
 
@@ -275,11 +305,11 @@ Markers, memory signposts, and durable topology annotations belong in a larger c
 
 ## Related Tool
 
-AIluminode is the standalone pre-retrieval cognitive-orientation companion to OhBuoy.
+AIluminode is the standalone cognitive-orientation companion to OhBuoy.
 
 - OhBuoy handles operational and topological orientation.
 - Compass compares expected and observed propagation.
-- AIluminode handles cognitive posture, route polarity, and retrieval discipline before action.
+- AIluminode handles cognitive posture, route polarity, and posture-before-action discipline.
 
 Together they support orientation-first systems work without becoming telemetry, memory ownership, or autonomous orchestration.
 
@@ -287,7 +317,7 @@ Together they support orientation-first systems work without becoming telemetry,
 
 ## Keywords
 
-continuity tracing, operational topology, system propagation, runtime continuity, auth drift, topology mapping, trace analysis, operational GIS, fracture detection, startup sequencing, navigation continuity, systems topography, orientation-first systems, pre-retrieval orientation, cognitive posture, route polarity, bounded retrieval, contextual routing, drift reduction, retrieval discipline, terrain-aware systems
+continuity tracing, operational topology, system propagation, runtime continuity, auth drift, topology mapping, trace analysis, operational GIS, fracture detection, startup sequencing, navigation continuity, systems topography, orientation-first systems, cognitive orientation, posture-before-action, cognitive posture, route polarity, bounded retrieval, contextual routing, drift reduction, retrieval discipline, terrain-aware systems, unknownTerrain
 
 ---
 

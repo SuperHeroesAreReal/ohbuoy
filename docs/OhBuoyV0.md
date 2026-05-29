@@ -144,16 +144,17 @@ The future mapping layer is named:
 Plotter
 ```
 
-Plotter maps local node vocabulary and corridors. It is not part of OhBuoy V0.
+Plotter is the position instrument: it asks "Where am I?" in local node vocabulary and corridors. It is not part of OhBuoy V0.
 
 Current separation:
 
 ```text
-RECCE = enters terrain, observes, reports
-Plotter = maps local node vocabulary and corridors
-OhBuoy = scans declared continuity paths
-AIluminode = wieldable cognitive orientation instrument
-EEG = AIluminode scan mode for route polarity
+OhBuoy = continuity instrument, asks "Is the route alive?"
+Compass = bearing instrument, asks "Which way should I face?"
+RECCE = reconnaissance instrument, asks "What is actually out there?"
+Plotter = position instrument, asks "Where am I?"
+AIluminode = cognitive orientation instrument, asks "How should I proceed?"
+EEG = internal AIluminode scan mode for route polarity
 nai = larger cognition layer
 ```
 
@@ -162,6 +163,21 @@ AIluminode is an external orientation instrument for prompts/tasks. Compass guid
 Compass determines corridor truth. AIluminode determines cognitive and retrieval posture.
 
 AIluminode does not crawl, retain prompts, retrieve memory, ingest source material, or change code.
+
+Glass Stack doctrine:
+
+```text
+No pane owns the terrain.
+No pane owns another pane.
+Use the smallest set of panes needed before action.
+```
+
+Unknown terrain:
+
+```text
+unknownTerrain = route not registered, position uncertain, bearing unavailable.
+Stop propagation and report state.
+```
 
 Do not add marker runtime, persistence, dashboards, autonomous discovery, or memory systems to OhBuoy V0.
 
