@@ -301,6 +301,28 @@ larger package = remembers/signposts terrain
 
 Markers, memory signposts, and durable topology annotations belong in a larger cognition layer, not in the scanner.
 
+Branch A is the current preferred orientation stack for validation:
+
+```text
+Prompt
+→ Stance
+→ Compass
+→ Plotter
+→ AIluminode
+→ Retrieval
+→ Reasoning
+→ Response
+```
+
+Branch A preserves the distinction:
+
+```text
+Compass = bearing = Which way should I face?
+Plotter = position = Where am I?
+```
+
+See [BranchA.md](docs/BranchA.md).
+
 ---
 
 ## Related Tool
