@@ -2,11 +2,17 @@
 
 ![OhBuoy - stack trace ocean](assets/ohbuoy-stack-trace-ocean.png)
 
-OhBuoy is a lightweight operational orientation instrument.
+OhBuoy is a lightweight continuity scanner.
 
 It is not observability tooling, telemetry, distributed tracing, dashboards, AI orchestration, network surveillance, or infrastructure crawling.
 
 Audits tell you what exists. OhBuoy tells you what happens along declared terrain.
+
+Core question:
+
+```text
+Is the route alive?
+```
 
 Core loop:
 
@@ -48,7 +54,7 @@ Equivalent scan form:
 .\cli\build\install\ohbuoy\bin\ohbuoy.bat scan startup
 ```
 
-Run the AIluminode EEG orientation instrument:
+Optional companion scan in this repo:
 
 ```powershell
 .\cli\build\install\ohbuoy\bin\ohbuoy.bat eeg "Refactor Paula EPUB source handling without touching memory save logic"
@@ -56,22 +62,11 @@ Run the AIluminode EEG orientation instrument:
 
 ---
 
-## Orientation Stack
+## Related Toolkit
 
-```text
-OhBuoy      = continuity instrument
-Compass     = bearing instrument
-RECCE       = reconnaissance instrument
-Plotter     = position instrument
-AIluminode  = cognitive orientation instrument
-EEG         = internal AIluminode scan mode for contextual posture
-```
+OhBuoy is part of the broader NodAIity orientation toolkit. It functions independently and can also be used alongside other orientation instruments.
 
-Compass determines corridor truth.
-
-AIluminode determines cognitive and retrieval posture.
-
-Instrument questions:
+Toolkit questions:
 
 ```text
 OhBuoy     -> Is the route alive?
@@ -81,20 +76,14 @@ Plotter    -> Where am I?
 AIluminode -> How should I proceed?
 ```
 
+No tool here is a required dependency of another tool. Each instrument should still make sense by itself.
+
 Glass Stack doctrine:
 
 ```text
 No pane owns the terrain.
 No pane owns another pane.
 Use the smallest set of panes needed before action.
-```
-
-EEG is the first AIluminode mode. It asks:
-
-```text
-What terrain am I allowed to enter?
-What terrain should I avoid?
-What terrain should I protect?
 ```
 
 Route polarity is a corridor, not a blindfold.
@@ -325,15 +314,11 @@ See [BranchA.md](docs/BranchA.md).
 
 ---
 
-## Related Tool
+## Related
 
-AIluminode is the standalone cognitive-orientation companion to OhBuoy.
+Part of the NodAIity orientation toolkit.
 
-- OhBuoy handles operational and topological orientation.
-- Compass compares expected and observed propagation.
-- AIluminode handles cognitive posture, route polarity, and posture-before-action discipline.
-
-Together they support orientation-first systems work without becoming telemetry, memory ownership, or autonomous orchestration.
+OhBuoy can be used independently or alongside other orientation instruments. The toolkit shows how the instruments relate; it does not create a shared runtime, mandatory stack, or ownership chain.
 
 ---
 
