@@ -55,6 +55,42 @@ PASS
 
 The public docs preserve tool independence and avoid mandatory runtime-chain language.
 
+## Glass Stack Validation
+
+Observed behavior during this hardening pass:
+
+```text
+Codex did not treat S+R as a fixed pipeline.
+Codex selected different orientation panes for different questions.
+```
+
+Observed pane use:
+
+```text
+AIluminode -> posture warning
+Compass    -> side-corridor / bearing detection
+Plotter    -> active terrain identification
+RECCE      -> verification and inspection
+OhBuoy     -> continuity confirmation
+```
+
+Result:
+
+```text
+PASS
+```
+
+The tools behaved as independent orientation panes rather than dependent processing stages.
+
+This aligns with the Glass Stack doctrine:
+
+```text
+same terrain
+different illumination
+```
+
+This observation is release-hardening evidence, not a new benchmark phase.
+
 ## Instrument Questions Check
 
 Expected public questions:
@@ -152,4 +188,3 @@ Architecture expansion: none
 ```
 
 The buoy floats because it is light.
-
