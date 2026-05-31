@@ -314,6 +314,37 @@ See [BranchA.md](docs/BranchA.md).
 
 ---
 
+## Evidence Status
+
+Current evidence ladder:
+
+```text
+Paula
+→ controlled packet proof-of-gate
+→ CPO changes behavior before retrieval
+
+Orientation Testbed Round 1
+→ behavior-change benchmark
+→ unknown and historical terrain pressure
+
+Orientation Testbed Round 2
+→ future paired measurement
+→ work saved
+```
+
+Current caveat:
+
+```text
+Current results demonstrate behavior change before retrieval and early work-reduction signals.
+They do not yet support broad drift-reduction claims.
+```
+
+The first win is better orientation.
+
+The next measured win is work avoided.
+
+---
+
 ## Related
 
 Part of the NodAIity orientation toolkit.
