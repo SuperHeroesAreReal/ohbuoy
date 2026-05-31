@@ -36,7 +36,7 @@ The scanner observes declared terrain. It does not crawl, discover, retain, orch
 - CLI entrypoint: `ohbuoy startup` and `ohbuoy scan startup`
 - RECCE doctrine tests
 - V0 CLI package distribution
-- EEG contextual posture scanner: `ohbuoy eeg <prompt>`
+- AIluminode internal EEG posture scan mode: `ohbuoy eeg <prompt>`
 
 Canonical sample:
 
@@ -153,14 +153,14 @@ OhBuoy = continuity instrument, asks "Is the route alive?"
 Compass = bearing instrument, asks "Which way should I face?"
 RECCE = reconnaissance instrument, asks "What is actually out there?"
 Plotter = position instrument, asks "Where am I?"
-AIluminode = cognitive orientation instrument, asks "How should I proceed?"
+AIluminode = posture-before-action orientation instrument, asks "How should I proceed?"
 EEG = internal AIluminode scan mode for route polarity
 nai = larger cognition layer
 ```
 
-AIluminode is an external orientation instrument for prompts/tasks. Compass guides AIluminode EEG when a declared propagation corridor is known, then EEG emits active terrain, stance, route polarity, drift risks, and the next safe action. Route polarity can mark routes as `OPEN`, `PROTECT`, `BLOCK`, `DEFER`, or `AUDIT`.
+AIluminode is an external orientation instrument for prompts/tasks. Compass can guide AIluminode's internal EEG mode when a declared propagation corridor is known, then that mode emits active terrain, stance, route polarity, drift risks, and the next safe action. Route polarity can mark routes as `OPEN`, `PROTECT`, `BLOCK`, `DEFER`, or `AUDIT`.
 
-Compass determines corridor truth. AIluminode determines cognitive and retrieval posture.
+Compass determines corridor truth. AIluminode determines posture before action.
 
 AIluminode does not crawl, retain prompts, retrieve memory, ingest source material, or change code.
 

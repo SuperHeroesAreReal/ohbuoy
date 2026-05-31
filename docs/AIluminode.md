@@ -1,6 +1,6 @@
 # AIluminode
 
-AIluminode is a wieldable cognitive orientation instrument.
+AIluminode is a wieldable posture-before-action orientation instrument.
 
 It is not memory, retrieval, reasoning, moderation, observability, or orchestration. It illuminates contextual posture before an AI or human enters terrain.
 
@@ -18,18 +18,18 @@ NodAIity tools
 ├── Compass: expected vs observed propagation
 ├── RECCE: bounded field verification
 ├── Plotter: position instrument
-└── AIluminode: cognitive orientation instrument
+└── AIluminode: posture-before-action orientation instrument
     └── EEG: internal route polarity scan mode
 ```
 
 Compass determines corridor truth.
 
-AIluminode determines cognitive and retrieval posture.
+AIluminode determines posture before action.
 
 Public identity:
 
 ```text
-AIluminode = cognitive orientation instrument
+AIluminode = posture-before-action orientation instrument
 EEG        = internal scan mode
 ```
 

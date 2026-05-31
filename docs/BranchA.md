@@ -22,7 +22,7 @@ Plotter = Position
 Plotter asks: Where am I?
 ```
 
-This distinction keeps bearing, position, and retrieval posture from collapsing into one tool.
+This distinction keeps bearing, position, and action posture from collapsing into one tool.
 
 ## Current Toolkit Roles
 
@@ -31,7 +31,7 @@ OhBuoy     = continuity / route-alive signal
 RECCE      = bounded reconnaissance, asks "What is actually there?"
 Compass    = bearing, asks "Which way should I face?"
 Plotter    = position, asks "Where am I?"
-AIluminode = orientation packet / posture scan
+AIluminode = posture-before-action orientation instrument, asks "How should I proceed?"
 ```
 
 OhBuoy and AIluminode remain the currently live public tools.
@@ -70,7 +70,7 @@ Purpose:
 - improve grounding
 - improve corridor selection
 - reduce retrieval wandering
-- improve retrieval quality before reasoning
+- improve downstream retrieval quality by orienting first
 
 Branch A is independently valuable. It does not require Context or KL.
 
@@ -128,4 +128,3 @@ Branch B: deferred
 Context: deferred
 KL: deferred from current validation work
 ```
-

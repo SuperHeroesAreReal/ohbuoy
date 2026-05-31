@@ -6,7 +6,7 @@ V0 stays a simple debugging scanner. V1 remains reserved for a future V0 upgrade
 
 Compass is not autonomous analysis, repository crawling, telemetry ingestion, or durable marker storage.
 
-Compass determines corridor truth. When a declared corridor is known, Compass can guide AIluminode EEG by providing propagation drift, likely fix, and Codex target routes.
+Compass determines corridor truth. When a declared corridor is known, Compass can guide AIluminode's internal EEG mode by providing propagation drift, likely fix, and Codex target routes.
 
 Compass is the bearing instrument: it asks "Which way should I face?"
 

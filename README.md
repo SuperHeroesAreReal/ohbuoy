@@ -54,7 +54,7 @@ Equivalent scan form:
 .\cli\build\install\ohbuoy\bin\ohbuoy.bat scan startup
 ```
 
-Optional companion scan in this repo:
+Optional AIluminode posture scan mode in this repo:
 
 ```powershell
 .\cli\build\install\ohbuoy\bin\ohbuoy.bat eeg "Refactor Paula EPUB source handling without touching memory save logic"
@@ -92,7 +92,7 @@ The scanner is operationally blinkered but architecturally peripheral-aware: it 
 
 Blocked terrain prevents implementation drift. It does not erase architectural awareness.
 
-Stable corridors need lighter orientation overhead. Uncertain, dark, or stale terrain should trigger a fresh Compass and EEG check before retrieval or action.
+Stable corridors need lighter orientation overhead. Uncertain, dark, or stale terrain should trigger a fresh Compass and AIluminode posture check before action.
 
 ```text
 if terrain feels stale
@@ -126,7 +126,7 @@ governance
 navigation
 ```
 
-AIluminode EEG emits a compact contextual posture trace:
+AIluminode's internal EEG mode emits a compact contextual posture trace:
 
 ```text
 EEG TRACE eeg_1234
@@ -150,7 +150,7 @@ ROUTE_POLARITY:
 - PROTECT: saved_memory (saved_memory is named under a protection/avoidance phrase)
 - AUDIT: compass:prompt_assembly (Compass target for observed propagation drift)
 - DEFER: vector_memory (vector_memory is not needed for this task)
-- BLOCK: autonomous_crawling (EEG V1 stays declared-terrain only)
+- BLOCK: autonomous_crawling (AIluminode stays declared-terrain only)
 
 OPEN_ROUTES:
 - current_prompt
@@ -234,7 +234,7 @@ It must never become an autonomous topology crawler. It does not chase unknown l
 
 The scanner emits bounded continuity packets, renders operational orientation, and releases the data.
 
-AIluminode follows the same boundary. EEG observes contextual posture before action; it does not read files, retain prompts, retrieve memory, or modify terrain.
+AIluminode follows the same boundary. Its internal EEG mode observes contextual posture before action; it does not read files, retain prompts, retrieve memory, or modify terrain.
 
 Side-door observations may inform a report, but they do not grant permission to widen the implementation route.
 
@@ -283,12 +283,12 @@ ohbuoy = observes terrain
 Compass = compares expected and observed propagation
 RECCE = proves field discipline
 Plotter = position instrument
-AIluminode = public cognitive orientation instrument
+AIluminode = public posture-before-action orientation instrument
 EEG = internal AIluminode scan mode for route polarity
-larger package = remembers/signposts terrain
+larger cognition layers may signpost terrain
 ```
 
-Markers, memory signposts, and durable topology annotations belong in a larger cognition layer, not in the scanner.
+Markers, signposts, and durable topology annotations belong in a larger cognition layer, not in the scanner.
 
 Branch A is the current preferred orientation stack for validation:
 
@@ -324,7 +324,7 @@ OhBuoy can be used independently or alongside other orientation instruments. The
 
 ## Keywords
 
-continuity tracing, operational topology, system propagation, runtime continuity, auth drift, topology mapping, trace analysis, operational GIS, fracture detection, startup sequencing, navigation continuity, systems topography, orientation-first systems, cognitive orientation, posture-before-action, cognitive posture, route polarity, bounded retrieval, contextual routing, drift reduction, retrieval discipline, terrain-aware systems, unknownTerrain
+continuity tracing, operational topology, system propagation, runtime continuity, auth drift, topology mapping, trace analysis, operational GIS, fracture detection, startup sequencing, navigation continuity, systems topography, orientation-first systems, cognitive orientation, posture-before-action, cognitive posture, route polarity, bounded action, contextual routing, drift reduction, route discipline, terrain-aware systems, unknownTerrain
 
 ---
 
