@@ -103,6 +103,35 @@ if terrain feels stale
 
 ---
 
+## Orientation Before Retrieval
+
+OhBuoy is part of the broader NodAIity orientation research effort.
+
+Current NodAIity doctrine explores the idea that many AI failures may occur before retrieval rather than during reasoning.
+
+Orientation does not replace retrieval or reasoning.
+
+Orientation helps determine:
+
+- where the system is
+- which direction it should face
+- which terrain is active
+- which routes should remain closed
+
+Core doctrine:
+
+```text
+Don't reason harder.
+Orient first.
+
+Don't run faster.
+Follow the compass.
+```
+
+Compass does not choose direction. Compass reveals directional pressure already present in the terrain.
+
+---
+
 ## Expected V0 Terrain
 
 ```text
@@ -310,6 +339,10 @@ Compass = bearing = Which way should I face?
 Plotter = position = Where am I?
 ```
 
+The terrain directs Compass like a magnet.
+
+Compass reveals directional pressure already present in the terrain.
+
 See [BranchA.md](docs/BranchA.md).
 
 ---
@@ -355,7 +388,7 @@ OhBuoy can be used independently or alongside other orientation instruments. The
 
 ## Keywords
 
-continuity tracing, operational topology, system propagation, runtime continuity, auth drift, topology mapping, trace analysis, operational GIS, fracture detection, startup sequencing, navigation continuity, systems topography, orientation-first systems, cognitive orientation, posture-before-action, cognitive posture, route polarity, bounded action, contextual routing, drift reduction, route discipline, terrain-aware systems, unknownTerrain
+continuity tracing, operational topology, system propagation, runtime continuity, auth drift, topology mapping, trace analysis, operational GIS, fracture detection, startup sequencing, navigation continuity, systems topography, orientation-first systems, cognitive orientation, orientation before retrieval, pre-retrieval orientation, pre-reasoning orientation, posture-before-action, cognitive posture, route polarity, bounded action, contextual routing, context engineering, context drift, contextual orientation, AI navigation, retrieval governance, retrieval pressure, memory weighting, drift reduction, route discipline, terrain-aware systems, unknownTerrain
 
 ---
 
