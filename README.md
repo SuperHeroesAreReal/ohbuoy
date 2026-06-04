@@ -64,7 +64,16 @@ Optional AIluminode posture scan mode in this repo:
 
 ## Related Toolkit
 
-OhBuoy is part of the broader NodAIity orientation toolkit. It functions independently and can also be used alongside other orientation instruments.
+OhBuoy is an independently deployable continuity instrument and a pane in **Search and Rescue (S+R)**, the full NodAIity orientation toolkit.
+
+S+R combines independently wieldable orientation panes without turning them into a fixed pipeline or shared runtime. Use OhBuoy alone when the question is route continuity; use the smallest useful Glass Stack when the terrain needs more illumination.
+
+Explore the current S+R release and benchmark evidence:
+
+- [S+R Release Hardening](docs/S+R%20Release%20Hardening%201.md)
+- [S+R Test 1: Prove Orientation](docs/S+R%20Test%201.md)
+- [S+R Test 2: Measure Work Saved](docs/S+R%20Test%202.md)
+- [S+R Test 3: Doctrine Propagation](docs/S+R%20Test%203.md)
 
 Toolkit questions:
 
@@ -380,7 +389,7 @@ The next measured win is work avoided.
 
 ## Related
 
-Part of the NodAIity orientation toolkit.
+Part of **Search and Rescue (S+R)**, the full NodAIity orientation toolkit.
 
 OhBuoy can be used independently or alongside other orientation instruments. The toolkit shows how the instruments relate; it does not create a shared runtime, mandatory stack, or ownership chain.
 
