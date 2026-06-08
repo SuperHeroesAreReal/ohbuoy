@@ -45,19 +45,19 @@ Build the local CLI package:
 Run the scanner:
 
 ```powershell
-.\cli\build\install\ohbuoy\bin\ohbuoy.bat startup
+.\ohbuoy.bat startup
 ```
 
 Equivalent scan form:
 
 ```powershell
-.\cli\build\install\ohbuoy\bin\ohbuoy.bat scan startup
+.\ohbuoy.bat scan startup
 ```
 
 Optional AIluminode posture scan mode in this repo:
 
 ```powershell
-.\cli\build\install\ohbuoy\bin\ohbuoy.bat eeg "Refactor Paula EPUB source handling without touching memory save logic"
+.\ohbuoy.bat eeg "Refactor Paula EPUB source handling without touching memory save logic"
 ```
 
 ---
@@ -230,7 +230,7 @@ It does not inspect projects, crawl repositories, chase runtime links, or decide
 Run the Paula memory pipeline report:
 
 ```powershell
-.\cli\build\install\ohbuoy\bin\ohbuoy.bat compass paula_memory_pipeline
+.\ohbuoy.bat compass paula_memory_pipeline
 ```
 
 Expected shape:
